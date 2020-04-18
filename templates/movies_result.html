@@ -1,0 +1,22 @@
+<div class="cards row">
+  {% for movie in movies %}
+  <div class="card col-6" style="width: 18rem;">
+    <img
+      src="{{ movie.Poster }}"
+      class="card-img-top"
+      alt="{{ movie.Title }}"
+    />
+    <div class="card-body">
+      <h5 class="card-title">{{ movie.Title }}</h5>
+      <p class="card-text">
+        {{ movie.Year }}
+      </p>
+      <a
+        href="https://www.imdb.com/title/{{ movie.imdbID }}/"
+        class="btn btn-primary"
+        >imDB</a
+      >
+    </div>
+  </div>
+  {% endfor %}
+</div>

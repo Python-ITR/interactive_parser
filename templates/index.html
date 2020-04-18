@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Parser</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.css"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.52.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.js"></script>
+    <script src="/static/main.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+      </nav>
+    </div>
+
+    <div class="container-fluid content">
+      <div class="row">
+        <div class="editor col-5">
+          <textarea id="editor-input" class="editor-input"></textarea>
+        </div>
+        <div class="col-7">
+          <div id="preview" class="preview p-2"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

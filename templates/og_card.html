@@ -1,0 +1,15 @@
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row no-gutters">
+    {% if og.get('image') %}
+    <div class="col-md-4">
+      <img src="{{ og.image }}" class="card-img" alt="{{ og.get("title") }}" />
+    </div>
+    {% endif %}
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ og.get('title', 'Undefined') }}</h5>
+        <p class="card-text">{{ og.get('description', 'Decription is not defined') }}</p>
+      </div>
+    </div>
+  </div>
+</div>
